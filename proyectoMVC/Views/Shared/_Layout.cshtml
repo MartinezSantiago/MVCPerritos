@@ -1,0 +1,160 @@
+﻿
+@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - proyectoMVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/font-awesome.min.css">
+             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>      
+</head>
+<body>
+      <header class="container-fluid contacto">
+        <div class="row mx-auto py-3 d-flex justify-content-center">
+            <div class="col-8 contactos d-flex flex-wrap my-auto">
+                <div class="tel mx-2">
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                        <span>Tel: +549 1122334455</span>
+                    </a>
+                </div>
+
+                <div class="correo mx-2">
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                        <span>info@example.com</span>
+                    </a>
+                </div>
+
+                <div class="correo mx-2">
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa fa-map fa-lg" aria-hidden="true"></i>
+                        <span>Av. Siempreviva 742</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-4 redes d-flex justify-content-end">
+                <div class="facebook mx-2">
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="twitter mx-2">
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="youtube mx-2">
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="instagram mx-2">
+                    <a href="#" class="text-white text-decoration-none">
+                        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav id="menu" class="container-fluid d-flex justify-content-between align-items-center">
+        
+        
+        <a asp-action="Home" asp-controller="Home"><img src="~/media/logo/LogoPets-white.png" alt="" class="logo"></a>
+          
+      
+     
+       
+        <div class="users d-flex">
+            <div class="adoptador me-3">
+                 <a asp-action="Donar" asp-controller="Donar" class="text-white text-decoration-none d-flex">
+                    <p class="text-white my-auto pe-2 fs-6">Donar</p>
+
+
+
+                    
+               <i class="fa fa-paw fa-2x"  aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="adoptador me-3">
+                <a asp-action="Get" asp-controller="Mascotas" class="text-white text-decoration-none d-flex">
+                    <p class="text-white my-auto pe-2 fs-6">Adoptar</p>
+                    <i class="fa fa-paw fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="me-3">
+                @{var userRole = (User.Identity as ClaimsIdentity).Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault();
+                    if (userRole.Value == "dador")
+                    { 
+                      <a  asp-action="Post" asp-controller="Mascotas" class="text-white text-decoration-none d-flex">
+                    <p class="text-white my-auto pe-2 fs-6">Dar en Adopción</p>
+                    <i class="fa fa-paw fa-2x" aria-hidden="true"></i>
+                        </a>
+                    
+                    }
+                     else{
+                      <a  asp-action="Post" asp-controller="Dador" class="text-white text-decoration-none d-flex">
+                    <p class="text-white my-auto pe-2 fs-6">Dar en Adopción</p>
+                    <i class="fa fa-paw fa-2x" aria-hidden="true"></i>
+                    </a>
+                        }
+
+                }
+
+             
+                
+            </div>
+            <div class="user me-2">
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                </a>
+                 <div class="me-5">
+                    <div class="hover-contenedor-users"></div>
+                    <div class="contenedor-usuarios">
+
+                        <div class="cuenta mt-2">
+                            <a href="" class="d-flex hover-underline">
+                                <span class="material-symbols-outlined fs-icon">person</span>
+                                <p class="text-white ms-3 pt-1 fs-6 fw-bold">Cuenta</p>
+                            </a>
+                        </div>
+
+                        <div class="cuenta mt-2">
+                            <a href="" class="d-flex hover-underline">
+                                <span class="material-symbols-outlined fs-icon">help</span>
+                                <p class="text-white ms-3 pt-1 fs-6 fw-bold">Centro de ayuda</p>
+                            </a>
+                        </div>
+
+                        <hr>
+
+                        <div class="cuenta">
+                            <a asp-action="Logout" asp-controller="Users" class="d-flex hover-underline">
+                                <p class="text-white text-center ps-3 fs-6 fw-bold">Cerrar sesión</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+  
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
