@@ -96,7 +96,7 @@ namespace proyectoMVC.Controllers
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return View("Login");
-
+        
         }
      
     }

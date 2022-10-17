@@ -43,7 +43,7 @@
                     </div>
                     <h3 class="text-center fw-bold" data-aos-delay="400" data-aos="fade-right">@animal.Name</h3>
                     <p class="text-center w-75 mx-auto" data-aos-delay="400" data-aos="fade-right">@animal.Tamaño</p>
-                    <a asp-action="Details" class="d-block text-center" data-aos-delay="400" data-aos="fade-right">Read More</a>
+                    <a asp-action="Details" asp-route-id="@animal.Id" class="d-block text-center" data-aos-delay="400" data-aos="fade-right">Read More</a>
                 </div>
              
             }

@@ -1,4 +1,4 @@
-﻿
+﻿@model proyectoMVC.Entities.PreferenceId;
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,40 +10,70 @@
     <link rel="stylesheet" href="~/css/Layout.css">
     <link rel="stylesheet" href="~/css/Login.css">
     <link rel="icon" type="image/x-icon" href="~/media/icons/logo.png">
-    
+       <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+  
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
     <title>Dador</title>
 </head>
-<body>
-        
- <script src="https://sdk.mercadopago.com/js/v2"></script>
- <div class="cho-container"></div>
-<script>
-  const mp = new MercadoPago('TEST-6f89a93e-8a11-4b0f-995e-233ee1c1a309', {
-    locale: 'es-AR'
-  });
 
-  const checkout = mp.checkout({
-    preference: {
-      id: "1103088389-326d0a45-3957-49f9-a788-03f17356a141",
-      
-    },
-  });
-</script>
+<body>
+ 
+
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <div class="cho-container"></div>
+    <input type="text" value=@ViewBag.PreferenceId id="PreferenciaId" hidden/>
+       <script type="text/javascript">
+           
+           const preferenciaId=document.getElementById("PreferenciaId").value;
+
+if (preferenciaId != null && @ViewBag.Action==1) {
+
+    const mp = new MercadoPago('TEST-6f89a93e-8a11-4b0f-995e-233ee1c1a309', {
+        locale: 'es-AR'
+    });
+
+    const checkout = mp.checkout({
+        preference: {
+            id: preferenciaId,
+
+        }, autoOpen: true,
+    });
+}
+    </script>
+       
+   
+
+   
 
     <main class="container mt-5">
         <h1 class="text-center display-1 mb-5 title title-test">Donaciones</h1>
         <div class="row d-flex flex-column-reverse d-lg-flex flex-lg-row mx-auto">
             <div class="col-11 col-lg-6 col-xl-6 col-xxl-6 carrousel mx-auto mb-5 mb-lg-0">
                 <div class="imgs-carrousel">
-
                 </div>
             </div>
-            <div class="col-11 col-lg-6 col-xl-6 col-xxl-6 pt-lg-5 mx-auto">
-                <h2 class="text-center mt-lg-5 pt-lg-5 mb-lg-2">¡Muchas gracias por acceder a esta sección!</h2>
-                <button class="mx-auto d-block btns mb-5 mb-lg-2 mt-4 fs-3" onclick="checkout.open()"  id="checkout-open-radio"  >Donar<i class="fa fa-paw fa ms-2" aria-hidden="true"></i></button>
-            </div>
-        </div>
-    </main>
+            
+                <div class="col-11 col-lg-6 col-xl-6 col-xxl-6 pt-lg-5 mx-auto">
+            <form asp-action="Donar" method="post">
 
+                <input type="number" placeholder="Monto a donar:" required class="mx-auto d-block btns mb-5 mb-lg-2 mt-4 fs-3" id="montoADonar" name="montoADonar" min="1"  />
+                <h2 class="text-center mt-lg-5 pt-lg-5 mb-lg-2">¡Muchas gracias por acceder a esta sección!</h2>
+                <button class="mx-auto d-block btns mb-5 mb-lg-2 mt-4 fs-3"   id="checkout-open-radio"  >Donar<i class="fa fa-paw fa ms-2" aria-hidden="true"></i></button>
+          
+     
+ </form>
+   </div>
+            </div>
+       
+    </main>
+  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

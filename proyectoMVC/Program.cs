@@ -17,6 +17,7 @@ builder.Services.AddScoped<Encriptacion>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ImageToDirectory>();
 builder.Services.AddScoped<DadorService>();
+builder.Services.AddScoped<DonarService>();
 builder.Services.AddScoped<MascotaService>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x => {

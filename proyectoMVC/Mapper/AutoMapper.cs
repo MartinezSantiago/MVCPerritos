@@ -67,6 +67,72 @@ namespace proyectoMVC.Mapper
                 EsCorrecto=false
             };
         }
+        public MascotaEditDTO MascotaToMascotaEditDTO(Mascota mascota)
+        {
+             return new MascotaEditDTO()
+            {
+                 Sexo = mascota.Sexo,
+                 Descripcion = mascota.Descripción,
+                 Edad = mascota.Edad,
+
+                 Id = mascota.Id,
+                 LastName = mascota.LastName,
+                 Provincia = mascota.Provincia,
+                 Name = mascota.Name,
+                 Peso = mascota.Peso,
+                 Raza = mascota.Raza,
+                 Tamaño = mascota.Tamaño,
+                 Tipo = mascota.Tipo,
+                 Contacto = mascota.Contacto,
+                 UserId = mascota.UserId,
+                 Path = mascota.Imagen,
+                 IsDeleted = false
+             };
+        }
+        public Mascota MascotaEditDTOToMascota(MascotaEditDTO mascotaEditDTO,string path)
+        {
+            return new Mascota()
+            {
+                Sexo = mascotaEditDTO.Sexo,
+                Descripción = mascotaEditDTO.Descripcion,
+                Edad = mascotaEditDTO.Edad,
+                Imagen = path,
+                Id=mascotaEditDTO.Id,
+                IsDeleted = mascotaEditDTO.IsDeleted,
+                LastUpdate = DateTime.Now,
+                LastName = mascotaEditDTO.LastName,
+                Provincia = mascotaEditDTO.Provincia,
+          
+          
+                Name = mascotaEditDTO.Name,
+                Peso = mascotaEditDTO.Peso,
+                Raza = mascotaEditDTO.Raza,
+                Tamaño = mascotaEditDTO.Tamaño,
+                Tipo = mascotaEditDTO.Tipo,
+                Contacto = mascotaEditDTO.Contacto,
+                UserId = mascotaEditDTO.UserId
+
+            };
+        }
+        public MascotaDetailsDTO MascotaToMascotaDetailsDTO(Mascota mascota)
+        {
+            return new MascotaDetailsDTO()
+            {
+               Contacto = mascota.Contacto,
+               Descripcion=mascota.Descripción,
+               Edad=mascota.Edad,
+               Sexo=mascota.Sexo,
+               Id=mascota.Id,
+               Imagen=mascota.Imagen,
+               LastName=mascota.LastName,
+               Name=mascota.Name,
+               Peso=mascota.Peso,
+               Provincia=mascota.Provincia,
+               Raza=mascota.Raza,
+               Tamaño=mascota.Tamaño,
+               Tipo=mascota.Tipo
+            };
+        }
     }
 }
     

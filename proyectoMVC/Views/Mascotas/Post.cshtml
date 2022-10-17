@@ -38,9 +38,9 @@
                 </select>
                 <div class="d-flex justify-content-center">
                     <select asp-for="Tipo" name="Tipo" class="mx-1 p-1 rounded inputs ps-2 col-6">
-                        <option value="gato">Gato</option>
-                        <option value="perro">Perro</option>
-                        <option value="otro">Otros</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Otro">Otros</option>
                         <option disabled="true" selected="true" value="">Animal:</option>
                     </select>
                     <input asp-for="Raza" name="Raza" type="text" class="p-1 rounded inputs ps-2 col-6" placeholder="Raza: ">
@@ -86,7 +86,7 @@
         
                 </div>
                 <textarea type="text" name="descripcion" asp-for="Descripcion" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" placeholder="Descripción:" required></textarea>
-                <input asp-for="Contacto" type="tel" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" placeholder="Telefono:" required>
+                <textarea type="text" asp-for="Contacto" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" placeholder="Cómo contactarme:" required></textarea>
                 <input type="file" asp-for="Imagen"  class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" required>
                 <input type="submit" value="Poner en adopción" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12">
           

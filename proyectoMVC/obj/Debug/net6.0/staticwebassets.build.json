@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lwqy4pWW4rIbMvX0Phjksp9E7MAVifSZY0BmPpMr1XM=",
+  "Hash": "nird3LK9szZy+y3D74DZU1UQ8hcdTjszDYCXoDiMp8o=",
   "Source": "proyectoMVC",
   "BasePath": "_content/proyectoMVC",
   "Mode": "Default",
@@ -389,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\9b1f45a3-f869-4a20-97b8-9b96b1dc4f43_maxresdefault.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\a9318cbd-f515-46f4-8cb1-69e595f6f0ed_crazySimpson.jpg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/a9318cbd-f515-46f4-8cb1-69e595f6f0ed_crazySimpson.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a9318cbd-f515-46f4-8cb1-69e595f6f0ed_crazySimpson.jpg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\acfe4020-946a-4a99-b6fb-ce2d1668ee62_maxresdefault.jpg",

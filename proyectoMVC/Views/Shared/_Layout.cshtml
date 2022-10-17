@@ -88,50 +88,71 @@
                     <p class="text-white my-auto pe-2 fs-6">Adoptar</p>
                     <i class="fa fa-paw fa-2x" aria-hidden="true"></i>
                 </a>
-            </div>
-            <div class="me-3">
-                @{var userRole = (User.Identity as ClaimsIdentity).Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault();
-                    if (userRole.Value == "dador")
+            </div>  
+         
+           
+                @{
+                    var userRole = (User.Identity as ClaimsIdentity).Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault();
+                    if (userRole != null)
+                    {
+                        if (userRole.Value == "dador")
                     { 
+                         <div class="me-3">
                       <a  asp-action="Post" asp-controller="Mascotas" class="text-white text-decoration-none d-flex">
                     <p class="text-white my-auto pe-2 fs-6">Dar en Adopción</p>
                     <i class="fa fa-paw fa-2x" aria-hidden="true"></i>
                         </a>
-                    
+                     </div>
+                      <div class="me-3">
+                <a asp-action="GetMisAnimalitos" asp-controller="Mascotas" class="text-white text-decoration-none d-flex">
+                    <p class="text-white my-auto pe-2 fs-6">Ver mis Animalitos</p>
+                    <i class="fa fa-paw fa-2x" aria-hidden="true"></i>
+                </a>
+               </div>
+   
                     }
-                     else{
+                    
+                    }    
+                    else{
+                         <div class="me-3">
                       <a  asp-action="Post" asp-controller="Dador" class="text-white text-decoration-none d-flex">
                     <p class="text-white my-auto pe-2 fs-6">Dar en Adopción</p>
                     <i class="fa fa-paw fa-2x" aria-hidden="true"></i>
                     </a>
-                        }
+                    </div>
+                        } 
 
                 }
 
              
                 
-            </div>
+           
             <div class="user me-2">
                 <a href="#" class="text-white text-decoration-none">
                     <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
                 </a>
-                 <div class="me-5">
-                    <div class="hover-contenedor-users"></div>
-                    <div class="contenedor-usuarios">
+                @{
+                    var userRole1 = (User.Identity as ClaimsIdentity).Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault();
+                   
+                    if (userRole1 != null)
+                    { 
+                        <div class="me-5">
+                            <div class="hover-contenedor-users"></div>
+                        <div class="contenedor-usuarios">
 
-                        <div class="cuenta mt-2">
-                            <a href="" class="d-flex hover-underline">
-                                <span class="material-symbols-outlined fs-icon">person</span>
-                                <p class="text-white ms-3 pt-1 fs-6 fw-bold">Cuenta</p>
-                            </a>
-                        </div>
+                            <div class="cuenta mt-2">
+                                <a href="" class="d-flex hover-underline">
+                                    <span class="material-symbols-outlined fs-icon">person</span>
+                                    <p class="text-white ms-3 pt-1 fs-6 fw-bold">Cuenta</p>
+                                </a>
+                            </div>
 
-                        <div class="cuenta mt-2">
-                            <a href="" class="d-flex hover-underline">
-                                <span class="material-symbols-outlined fs-icon">help</span>
-                                <p class="text-white ms-3 pt-1 fs-6 fw-bold">Centro de ayuda</p>
-                            </a>
-                        </div>
+                            <div class="cuenta mt-2">
+                                <a href="" class="d-flex hover-underline">
+                                    <span class="material-symbols-outlined fs-icon">help</span>
+                                    <p class="text-white ms-3 pt-1 fs-6 fw-bold">Centro de ayuda</p>
+                                </a>
+                            </div>
 
                         <hr>
 
@@ -141,7 +162,37 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="me-5">
+                            <div class="hover-contenedor-users"></div>
+                        <div class="contenedor-usuarios">
+
+                            <div class="cuenta mt-2">
+                                <a asp-action="Login" asp-controller="Users" class="d-flex hover-underline">
+                                    <span class="material-symbols-outlined fs-icon">person</span>
+                                    <p class="text-white ms-3 pt-1 fs-6 fw-bold">Iniciar Sesión</p>
+                                </a>
+                            </div>
+
+                            <div class="cuenta mt-2">
+                                <a asp-action="Register" asp-controller="Users" class="d-flex hover-underline">
+                                    <span class="material-symbols-outlined fs-icon">person</span>
+                                    <p class="text-white ms-3 pt-1 fs-6 fw-bold">Registrarse</p>
+                                </a>
+                            </div>
+
+                        <hr>
+
+                       
+                    </div>
+                        </div>
+                    }
+                      
+            }
+              
             </div>
         </div>
     </nav>
