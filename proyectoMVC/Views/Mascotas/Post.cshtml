@@ -1,0 +1,135 @@
+﻿@model proyectoMVC.Mapper.DTO.MascotaCreateDTO
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/Login.css">
+    <link rel="stylesheet" href="~/css/Layout.css">
+    <link rel="icon" type="image/x-icon" href="~/media/icons/logo.png">
+  
+    <title>Dar en Adopción</title>
+</head>
+<body>
+
+    <main class="container-fluid mt-5">
+        <div class="row formulario d-flex flex-column flex-lg-row mx-auto">
+
+            <form asp-action="Post" class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 col-xxl-4 mx-auto my-auto" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="col-12">@ViewBag.Message</div>
+                <h1 class="text-center display-1 mb-5 title">Dador</h1>
+
+                <div class="d-flex justify-content-center my-2">
+                    <div class="d-flex flex-column col-6 me-1">
+                        <label for="Name" class="fw-bold">Nombre:</label>
+                        <input type="text" asp-for="Name" class="mx-1 p-1 rounded inputs ps-2 col-12" placeholder="Santiago" required>
+                    </div>
+                    <div class="d-flex flex-column col-6 me-1">
+                        <label for="LastName" class="fw-bold">Apellido:</label>
+                        <input type="text" asp-for="LastName" class="p-1 rounded inputs ps-2 col-12" placeholder="Martinez" required>
+                    </div>
+                </div>
+                <div class="d-flex flex-column col-12 me-1 my-2">
+                    <label for="Sexo" class="fw-bold">Sexo:</label>
+                    <select asp-for="Sexo" class="d-block mx-auto p-1 rounded inputs ps-2 col-12" required>
+                        <option value="Macho">Macho</option>
+                        <option value="Hembra">Hembra</option>
+                        <option disabled="true" selected="true" value="">Sexo</option>
+                    </select>
+                </div>
+                
+                <div class="d-flex justify-content-between pe-2">
+                    <div class="d-flex flex-column col-6 me-1">
+                        <label for="animal" class="fw-bold">Tipo animalito:</label>
+                        <select asp-for="Tipo" name="Tipo" class="mx-1 p-1 rounded inputs ps-2 w-100">
+                            <option value="Gato">Gato</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Otro">Otros</option>
+                            <option disabled="true" selected="true" value="">Animalito</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column col-6 ms-1 ps-1">
+                        <label for="Raza" class="fw-bold">Raza:</label>
+                        <input asp-for="Raza" name="Raza" type="text" class="p-1 rounded inputs ps-2 w-100" placeholder="Raza">
+                    </div>
+
+                </div>
+                <div class="d-flex flex-column col-12 my-2">
+                    <label for="Edad" class="fw-bold">Edad:</label>
+                    @Html.EditorFor(model=>model.Edad, new { htmlAttributes = new { @placeholder = "Edad(Años)", @class="d-block mx-auto p-1 rounded inputs ps-2 col-12"}})
+                </div>
+                <div class="d-flex flex-column col-12 my-2">
+                    <label for="Provincia" class="fw-bold">Provincia:</label>
+                    <select asp-for="Provincia" class="d-block mx-auto p-1 rounded inputs ps-2 col-12" required>
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Catamarca</option>
+                        <option value="5">Chaco</option>
+                        <option value="6">Chubut</option>
+                        <option value="50">CABA</option>
+                        <option value="3">Córdoba</option>
+                        <option value="4">Corrientes</option>
+                        <option value="7">Entre Ríos</option>
+                        <option value="8">Formosa</option>
+                        <option value="9">Jujuy</option>
+                        <option value="10">La Pampa</option>
+                        <option value="11">La Rioja</option>
+                        <option value="12">Mendoza</option>
+                        <option value="13">Misiones</option>
+                        <option value="14">Neuquen</option>
+                        <option value="15">Rio Negro</option>
+                        <option value="16">Salta</option>
+                        <option value="17">San Luis</option>
+                        <option value="19">Santa Cruz</option>
+                        <option value="20">Santa Fe</option>
+                        <option value="21">Santiago del Estero</option>
+                        <option value="22">Tierra del Fuego</option>
+                        <option disabled="true" selected="true" value="">Provincia</option>
+                    </select>
+                </div>
+                
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column col-8 my-2 mt-1">
+                        <label for="Tamaño" class="fw-bold">Tamaño</label>
+                        <select asp-for="Tamaño" class="mx-1 p-1 rounded inputs " required>
+                            <option value="Chico">Chico</option>
+                            <option value="Mediano">Mediano</option>
+                            <option value="Grande">Grande</option>
+                            <option disabled="true" selected="true" value="">Tamaño:</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column col-4 my-2">
+                        <label for="Peso" class="fw-bold">Peso:</label>
+                        @Html.EditorFor(model=>model.Peso, new { htmlAttributes = new { @placeholder = "Peso(KG)", @class= "p-1 rounded inputs  col-12"}})
+                    </div>
+        
+                </div>
+                
+                <textarea type="text" name="descripcion" asp-for="Descripcion" class="d-block mx-auto p-1 my-2 rounded inputs ps-2 col-12 textsareas" placeholder="Descripción:" required></textarea>
+                <div class="d-flex flex-column col-12 my-2">
+                    <label for="Contacto" class="fw-bold">Contactos:</label>
+                    <textarea type="text" asp-for="Contacto" class="d-block mx-auto p-1 rounded inputs ps-2 col-12 textsareas" placeholder="Cómo contactarme:" required></textarea>
+                </div>
+                <input type="file" asp-for="Imagen"  class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" required>
+                <input type="submit" value="Poner en adopción" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12">
+          
+
+            </form>
+            <div class="col-12 col-sm-9 col-md-8 col-lg-8 col-xl-6 col-xxl-6 d-none d-sm-block ps-6 pt-4 mx-auto">
+                <img src="~/media/imgs/img-dador.jpg" alt="" class="h-img shadow h-100 mx-auto">
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
