@@ -177,6 +177,9 @@ body {
 
 
 .img-circle {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -284,6 +287,7 @@ body {
 .inputYlabel {
     position: relative;
     margin-top: 30px;
+    width: 300px;
 }
 
     .inputYlabel label {
@@ -343,10 +347,23 @@ body {
     }
 }
 
+.textsareas {
+    max-height: 200px;
+}
+
+
 
 
 
 @media screen and (max-width: 890px) {
+    .title-test {
+        font-size: 5rem;
+    }
+
+    .inputYlabel {
+        width: 280px;
+    }
+
     #menu {
         padding: 0 0 11px 0;
     }

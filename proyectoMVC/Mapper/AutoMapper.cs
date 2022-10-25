@@ -51,7 +51,7 @@ namespace proyectoMVC.Mapper
 
             };
         }
-        public Dador DadorInfoPostDTOToDadorInfo(DadorPostDTO dadorInfoPostDTO,string FrenteDni,string DorsoDni, string ImagenUsuario, int Id)
+        public Dador DadorInfoPostDTOToDadorInfo(DadorPostDTO dadorInfoPostDTO,string? FrenteDni,string? DorsoDni, string? ImagenUsuario, int Id)
         {
             return new Dador()
             {

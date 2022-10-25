@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "proyectoMVC/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.9.69",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
@@ -16,6 +17,25 @@
         },
         "runtime": {
           "proyectoMVC.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.13.20": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.13.20"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.9.69": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.13.20"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.9.69"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2237,6 +2257,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.13.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-32XGf7RG2gg32yxEniY32KBP32caIoWWnqMJ7vzw0XpeAUkyvZujW1+okAxtSBjYnZCk6pNHI3qu1HaUc+63qg==",
+      "path": "awssdk.core/3.7.13.20",
+      "hashPath": "awssdk.core.3.7.13.20.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.9.69": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-48S/Vfv7lktR5fTEkA+3Zw1L2iQZhmpmf0Zd5fmN0gY8z1NOk7S/lY9aoQWT688nm2QkUI27EDvfxVhdF+SWpw==",
+      "path": "awssdk.s3/3.7.9.69",
+      "hashPath": "awssdk.s3.3.7.9.69.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

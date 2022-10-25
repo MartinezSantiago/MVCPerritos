@@ -32,7 +32,7 @@ namespace proyectoMVC.Services
        
         public async Task Create(MascotaCreateDTO mascotaCreateDTO,IWebHostEnvironment webHostEnvironment,int userId)
         {
-            var path=imageToDirectory.UploadImageToDirectory(mascotaCreateDTO.Imagen,webHostEnvironment);
+            var path= imageToDirectory.UploadImageToDirectoy(mascotaCreateDTO.Imagen, webHostEnvironment);
 
            var mascota= automapper.MascotaCreateDTOToMascota(mascotaCreateDTO, path, userId);
             await appContext.AddAsync(mascota);
@@ -43,7 +43,7 @@ namespace proyectoMVC.Services
            string path;
             if (mascotaEditDTO.Imagen != null)
             {
-               path = imageToDirectory.UploadImageToDirectory(mascotaEditDTO.Imagen, webHostEnvironment);
+               path =  imageToDirectory.UploadImageToDirectoy(mascotaEditDTO.Imagen,webHostEnvironment);
             }
             else
             {
@@ -56,7 +56,7 @@ namespace proyectoMVC.Services
         }
         public async Task<List<MascotaViewDTO>> GetMisAnimalitos(int userId)
         {
-            var mascotas = await appContext.mascotas.Where(x => x.UserId==userId).ToListAsync();
+            var mascotas = await appContext.mascotas.Where(x => x.UserId==userId && x.IsDeleted==false).ToListAsync();
             List<MascotaViewDTO> mascotasView = new List<MascotaViewDTO>();
             foreach (var mascota in mascotas)
             {
@@ -81,6 +81,17 @@ namespace proyectoMVC.Services
 
             return automapper.MascotaToMascotaDetailsDTO(mascota);
         }
+        public async Task Delete(int id)
+        {
+            var mascota = await appContext.mascotas.Where(x => x.Id == id).FirstOrDefaultAsync();
+            if (mascota != null)
+            {
+                mascota.IsDeleted = true;
+                mascota.LastUpdate = DateTime.Now;
 
+               await appContext.SaveChangesAsync();
+            }
+        
+        }
     }
 }

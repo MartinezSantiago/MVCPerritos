@@ -77,11 +77,13 @@ namespace proyectoMVC.Controllers
         [HttpPost("[controller]/Edit")]
         public async Task<IActionResult> Edit(MascotaEditDTO mascotaEditDTO)
         {
+         
             string messages = string.Join("; ", ModelState.Values
                                         .SelectMany(x => x.Errors)
                                         .Select(x => x.ErrorMessage));
             Console.WriteLine(messages);
             ViewBag.Message=messages;
+          
             if (ModelState.IsValid)
             {
                 await mascotaService.Edit(mascotaEditDTO,webHostEnvironment);
@@ -96,6 +98,14 @@ namespace proyectoMVC.Controllers
         {
             return View(await mascotaService.GetMascotaDetailsDTOById(Id));
         }
+        [Authorize(Roles = "dador")]
+        [HttpGet("[controller]/Delete")]
+        public async Task<IActionResult> Delete(int Id)
+        {
+           
+           await mascotaService.Delete(Id);
+            return RedirectToAction("GetMisAnimalitos");
 
+        }
     }
 }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="~/css/Login.css">
     <link rel="stylesheet" href="~/css/Layout.css">
     <link rel="icon" type="image/x-icon" href="~/media/icons/logo.png">
-  
+
     <title>Dar en Adopción</title>
 </head>
 <body>
@@ -25,71 +25,102 @@
                 <div class="col-12">@ViewBag.Message</div>
                 <h1 class="text-center display-1 mb-5 title">Dador</h1>
 
-                <div class="d-flex justify-content-center">
-                    <input type="text" asp-for="Name"  class="mx-1 p-1 rounded inputs ps-2 col-6" placeholder="Nombre:" required>
-                    <input type="text" asp-for="LastName"   class="p-1 rounded inputs ps-2 col-6" placeholder="Apellido:">
+                <div class="d-flex justify-content-center my-2">
+                    <div class="d-flex flex-column col-6 me-1">
+                        <label for="Name" class="fw-bold">Nombre:</label>
+                        <input type="text" asp-for="Name" class="mx-1 p-1 rounded inputs ps-2 col-12" placeholder="Nombre" required>
+                    </div>
+                    <div class="d-flex flex-column col-6 me-1">
+                        <label for="LastName" class="fw-bold">Apellido:</label>
+                        <input type="text" asp-for="LastName" class="p-1 rounded inputs ps-2 col-12" placeholder="Apellido" required>
+                    </div>
                 </div>
-                <select asp-for="Sexo"  class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" required>
-
+                <div class="d-flex flex-column col-12 me-1 my-2">
+                    <label for="Sexo" class="fw-bold">Sexo:</label>
+                    <select asp-for="Sexo" class="d-block mx-auto p-1 rounded inputs ps-2 col-12" required>
                         <option value="Macho">Macho</option>
                         <option value="Hembra">Hembra</option>
-                        <option disabled="true" selected="true" value="">Sexo:</option>
-
-                </select>
-                <div class="d-flex justify-content-center">
-                    <select asp-for="Tipo" name="Tipo" class="mx-1 p-1 rounded inputs ps-2 col-6">
-                        <option value="Gato">Gato</option>
-                        <option value="Perro">Perro</option>
-                        <option value="Otro">Otros</option>
-                        <option disabled="true" selected="true" value="">Animal:</option>
+                        <option disabled="true" selected="true" value="">Sexo</option>
                     </select>
-                    <input asp-for="Raza" name="Raza" type="text" class="p-1 rounded inputs ps-2 col-6" placeholder="Raza: ">
+                </div>
+
+                <div class="d-flex justify-content-between pe-2">
+                    <div class="d-flex flex-column col-6 me-1">
+                        <label for="animal" class="fw-bold">Tipo animalito:</label>
+                        <select asp-for="Tipo" name="Tipo" class="mx-1 p-1 rounded inputs ps-2 w-100">
+                            <option value="Gato">Gato</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Otros">Otros</option>
+                            <option disabled="true" selected="true" value="">Animalito</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column col-6 ms-1 ps-1">
+                        <label for="Raza" class="fw-bold">Raza:</label>
+                        <input asp-for="Raza" name="Raza" type="text" class="p-1 rounded inputs ps-2 w-100" placeholder="Raza">
+                    </div>
 
                 </div>
-                  @Html.EditorFor(model=>model.Edad, new { htmlAttributes = new { @placeholder = "Edad(Años)", @class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12"}})
-       
-                <select  asp-for="Provincia" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" required>
-                    <option value="1">Buenos Aires</option>
-                    <option value="2">Catamarca</option>
-                    <option value="5">Chaco</option>
-                    <option value="6">Chubut</option>
-                    <option value="50">CABA</option>
-                    <option value="3">Córdoba</option>
-                    <option value="4">Corrientes</option>
-                    <option value="7">Entre Ríos</option>
-                    <option value="8">Formosa</option>
-                    <option value="9">Jujuy</option>
-                    <option value="10">La Pampa</option>
-                    <option value="11">La Rioja</option>
-                    <option value="12">Mendoza</option>
-                    <option value="13">Misiones</option>
-                    <option value="14">Neuquen</option>
-                    <option value="15">Rio Negro</option>
-                    <option value="16">Salta</option>
-                    <option value="17">San Luis</option>
-                    <option value="19">Santa Cruz</option>
-                    <option value="20">Santa Fe</option>
-                    <option value="21">Santiago del Estero</option>
-                    <option value="22">Tierra del Fuego</option>
-                    <option disabled="true" selected="true" value="">Provincia:</option>
-                </select>
-                <div class="d-flex justify-content-center">
-                    <select asp-for="Tamaño" class="mx-1 p-1 rounded inputs ps-2 col-8" required>
-                             
-                        <option value="Chico">Chico</option>
-                        <option value="Mediano">Mediano</option>
-                        <option value="Grande">Grande</option>
-                   <option disabled="true" selected="true" value="">Tamaño:</option>
-                    </select>
-
-                   @Html.EditorFor(model=>model.Peso, new { htmlAttributes = new { @placeholder = "Peso(KG)", @class= "p-1 rounded inputs ps-2 col-4"}})
-        
+                <div class="d-flex flex-column col-12 my-2">
+                    <label for="Edad" class="fw-bold">Edad:</label>
+                    @Html.EditorFor(model=>model.Edad, new { htmlAttributes = new { @placeholder = "Edad(Años)", @class="d-block mx-auto p-1 rounded inputs ps-2 col-12"}})
                 </div>
-                <textarea type="text" name="descripcion" asp-for="Descripcion" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" placeholder="Descripción:" required></textarea>
-                <textarea type="text" asp-for="Contacto" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" placeholder="Cómo contactarme:" required></textarea>
-                <input type="file" asp-for="Imagen"  class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" required>
+                <div class="d-flex flex-column col-12 my-2">
+                    <label for="Provincia" class="fw-bold">Provincia:</label>
+                    <select asp-for="Provincia" class="d-block mx-auto p-1 rounded inputs ps-2 col-12" required>
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Catamarca</option>
+                        <option value="5">Chaco</option>
+                        <option value="6">Chubut</option>
+                        <option value="50">CABA</option>
+                        <option value="3">Córdoba</option>
+                        <option value="4">Corrientes</option>
+                        <option value="7">Entre Ríos</option>
+                        <option value="8">Formosa</option>
+                        <option value="9">Jujuy</option>
+                        <option value="10">La Pampa</option>
+                        <option value="11">La Rioja</option>
+                        <option value="12">Mendoza</option>
+                        <option value="13">Misiones</option>
+                        <option value="14">Neuquen</option>
+                        <option value="15">Rio Negro</option>
+                        <option value="16">Salta</option>
+                        <option value="17">San Luis</option>
+                        <option value="19">Santa Cruz</option>
+                        <option value="20">Santa Fe</option>
+                        <option value="21">Santiago del Estero</option>
+                        <option value="22">Tierra del Fuego</option>
+                        <option disabled="true" selected="true" value="">Provincia</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column col-8 my-2 mt-1">
+                        <label for="Tamaño" class="fw-bold">Tamaño</label>
+                        <select asp-for="Tamaño" class="mx-1 p-1 rounded inputs " required>
+                            <option value="Chico">Chico</option>
+                            <option value="Mediano">Mediano</option>
+                            <option value="Grande">Grande</option>
+                            <option disabled="true" selected="true" value="">Tamaño:</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column col-4 my-2 mt-1">
+                        <label for="Peso" class="fw-bold">Peso:</label>
+                        @Html.EditorFor(model=>model.Peso, new { htmlAttributes = new { @placeholder = "Peso(KG)", @class= "p-1 rounded inputs  col-12"}})
+                    </div>
+
+                </div>
+                <div class="d-flex flex-column col-12 my-2">
+                    <label for="descripcion" class="fw-bold">Descripción:</label>
+                    <textarea type="text" name="descripcion" asp-for="Descripcion" class="d-block mx-auto p-1 my-2 rounded inputs ps-2 col-12 textsareas" placeholder="Descripción:" required></textarea>
+                </div>
+                
+                <div class="d-flex flex-column col-12 my-2">
+                    <label for="Contacto" class="fw-bold">Contactos:</label>
+                    <textarea type="text" asp-for="Contacto" class="d-block mx-auto p-1 rounded inputs ps-2 col-12 textsareas" placeholder="Cómo contactarme:" required></textarea>
+                </div>
+                <input type="file" asp-for="Imagen" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12" required>
                 <input type="submit" value="Poner en adopción" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 col-12">
-          
+
 
             </form>
             <div class="col-12 col-sm-9 col-md-8 col-lg-8 col-xl-6 col-xxl-6 d-none d-sm-block ps-6 pt-4 mx-auto">

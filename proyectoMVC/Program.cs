@@ -1,3 +1,4 @@
+using Amazon.S3;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using proyectoMVC.Context;
@@ -11,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
 builder.Services.AddDbContext<AppContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("defaultConection")));
 builder.Services.AddScoped<AutoMapper>();
 builder.Services.AddScoped<Encriptacion>();
@@ -19,6 +22,7 @@ builder.Services.AddScoped<ImageToDirectory>();
 builder.Services.AddScoped<DadorService>();
 builder.Services.AddScoped<DonarService>();
 builder.Services.AddScoped<MascotaService>();
+
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x => {
     x.LoginPath = "/Users/Login"; x.AccessDeniedPath = new PathString("/Unauthorized");

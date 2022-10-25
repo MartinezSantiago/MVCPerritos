@@ -10,7 +10,7 @@ namespace proyectoMVC.Helper
     
         public class ImageToDirectory
         {
-            public string UploadImageToDirectory(IFormFile formfile, IWebHostEnvironment webHostEnvironment)
+            public string UploadImageToDirectoy(IFormFile formfile, IWebHostEnvironment webHostEnvironment)
             {
                 string? uniqueFileName = null;
 

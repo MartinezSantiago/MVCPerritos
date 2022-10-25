@@ -39,6 +39,7 @@ namespace proyectoMVC.Mapper.DTO
      
         public IFormFile? Imagen { get; set; }
         public int UserId { get; set; }
+        [Required]
         public  string Path { get; set; }
     }
 }

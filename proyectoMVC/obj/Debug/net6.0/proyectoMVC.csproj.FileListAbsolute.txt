@@ -523,3 +523,5 @@ C:\Users\Usuario\Desktop\C-MVC-master\proyectoMVC\bin\Debug\net6.0\Microsoft.Bui
 C:\Users\Usuario\Desktop\C-MVC-master\proyectoMVC\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 C:\Users\Usuario\Desktop\C-MVC-master\proyectoMVC\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
 C:\Users\Usuario\Desktop\C-MVC-master\proyectoMVC\bin\Debug\net6.0\MercadoPago.dll
+C:\Users\Usuario\Desktop\C-MVC-master\proyectoMVC\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\Usuario\Desktop\C-MVC-master\proyectoMVC\bin\Debug\net6.0\AWSSDK.S3.dll

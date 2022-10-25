@@ -19,9 +19,9 @@ namespace proyectoMVC.Services
 
         public async Task Post(DadorPostDTO dadorInfoPostDTO, IWebHostEnvironment webHostEnvironment, int UserId)
         {
-            var pathImagenUsuario = imageToDirectory.UploadImageToDirectory(dadorInfoPostDTO.ImagenPersona, webHostEnvironment);
-            var pathFrenteDNI = imageToDirectory.UploadImageToDirectory(dadorInfoPostDTO.FrenteDNI, webHostEnvironment);
-            var pathDorsoDNI = imageToDirectory.UploadImageToDirectory(dadorInfoPostDTO.DorsoDNI, webHostEnvironment);
+            var pathImagenUsuario =  imageToDirectory.UploadImageToDirectoy(dadorInfoPostDTO.ImagenPersona, webHostEnvironment);
+            var pathFrenteDNI =  imageToDirectory.UploadImageToDirectoy(dadorInfoPostDTO.FrenteDNI, webHostEnvironment);
+            var pathDorsoDNI = imageToDirectory.UploadImageToDirectoy(dadorInfoPostDTO.DorsoDNI, webHostEnvironment);
 
 
             var dador = autoMapper.DadorInfoPostDTOToDadorInfo(dadorInfoPostDTO, pathFrenteDNI, pathDorsoDNI, pathImagenUsuario, UserId);

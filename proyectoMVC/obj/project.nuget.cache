@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DFwSpEXI2TyHNlUYlsxzuG6SdGs776bY4zI1uiq2mv4FLMW7yBwuGk1+5X4XF8+hiP5BPDwUIruNSA4SagEQjA==",
+  "dgSpecHash": "It4mhsR7yaLdav2Su/fcpMPJbXbFooyyIlByr+wzTd89G2zp0rsMhSwUjVlheODjEJNsKh5C3btQVypamRyOSQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\proyectoMVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\awssdk.core\\3.7.13.20\\awssdk.core.3.7.13.20.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\awssdk.s3\\3.7.9.69\\awssdk.s3.3.7.9.69.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\mercadopago-sdk\\2.2.2\\mercadopago-sdk.2.2.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

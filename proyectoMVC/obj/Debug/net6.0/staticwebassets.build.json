@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nird3LK9szZy+y3D74DZU1UQ8hcdTjszDYCXoDiMp8o=",
+  "Hash": "C7JClqDEy7kfI2emmJlINueRkbCPQBOCFkbTls/InK0=",
   "Source": "proyectoMVC",
   "BasePath": "_content/proyectoMVC",
   "Mode": "Default",
@@ -153,6 +153,40 @@
       "OriginalItemSpec": "wwwroot\\images\\10fc392b-138c-4cf8-a5e5-aa4d40bb2b02_maxresdefault.jpg"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\141919f7-343b-4fad-9ffe-94ce0111d381_bombonera.jpg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/141919f7-343b-4fad-9ffe-94ce0111d381_bombonera.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\141919f7-343b-4fad-9ffe-94ce0111d381_bombonera.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\1aabb85d-057f-4e5f-9791-2c8172ba5e88_fifaWorldCup.jpg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/1aabb85d-057f-4e5f-9791-2c8172ba5e88_fifaWorldCup.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1aabb85d-057f-4e5f-9791-2c8172ba5e88_fifaWorldCup.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\2115ee9e-4e05-418b-93e1-ed6cdcc5fe90_maxresdefault.jpg",
       "SourceId": "proyectoMVC",
       "SourceType": "Discovered",
@@ -219,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2d48087d-0f19-40de-a3d2-5909d4a6320d_6.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\2ddfcc58-b6c2-46c8-a838-835d407fdb92_3.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/2ddfcc58-b6c2-46c8-a838-835d407fdb92_3.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2ddfcc58-b6c2-46c8-a838-835d407fdb92_3.jpeg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\376149be-88c3-44af-9bde-cfde6bb7a8c1_maxresdefault.jpg",
@@ -289,6 +340,23 @@
       "OriginalItemSpec": "wwwroot\\images\\56bb6c52-7b2e-458c-b68f-e6ad8c84b44e_maxresdefault.jpg"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\598aa8ff-ffa0-4753-a0cb-298c2c11543f_bombonera.jpg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/598aa8ff-ffa0-4753-a0cb-298c2c11543f_bombonera.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\598aa8ff-ffa0-4753-a0cb-298c2c11543f_bombonera.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\6d657ab1-5083-49a8-9ebd-a863e5396a12_maxresdefault.jpg",
       "SourceId": "proyectoMVC",
       "SourceType": "Discovered",
@@ -338,6 +406,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\76d90872-c0cb-47fe-9bce-192d4ff67e17_descarga.png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\82f4c598-c3b3-4755-ace0-31f3fd96ce27_bombonera.jpg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/82f4c598-c3b3-4755-ace0-31f3fd96ce27_bombonera.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\82f4c598-c3b3-4755-ace0-31f3fd96ce27_bombonera.jpg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\93f09ef1-6534-45f8-88ee-a8ae74767186_maxresdefault.jpg",

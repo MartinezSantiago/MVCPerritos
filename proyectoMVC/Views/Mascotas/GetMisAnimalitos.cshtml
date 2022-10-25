@@ -32,14 +32,16 @@
             {
 
                 <div class="col-10 col-md-5 col-lg-4 col-xl-4 col-xxl-4 mx-auto mb-5">
-                    <img src="~/images/@animal.Imagen" alt="" class="img-circle  d-block mx-auto" data-aos-delay="300" data-aos="fade-right">
+                        <img src="~/images/@animal.Imagen" alt="" class="img-circle  d-block mx-auto" data-aos-delay="300" data-aos="fade-right">
                     <div class="fecha d-flex justify-content-center me-3 mt-3" data-aos-delay="400" data-aos="fade-right">
                         <i class="fa fa-calendar fa-lg me-2" aria-hidden="true" data-aos-delay="450" data-aos="fade-right"></i>
                         <p data-aos-delay="900" data-aos="fade-right"> @animal.Edad</p>
                     </div>
                     <h3 class="text-center fw-bold" data-aos-delay="400" data-aos="fade-right">@animal.Name</h3>
                     <p class="text-center w-75 mx-auto" data-aos-delay="400" data-aos="fade-right">@animal.Tamaño</p>
-                    <a asp-action="Edit" asp-route-id="@animal.Id" class="d-block text-center" data-aos-delay="400" data-aos="fade-right">Edit</a>
+                    <a asp-action="Edit" asp-route-id="@animal.Id" class="d-block text-center" data-aos-delay="400" data-aos="fade-right">Editar</a>
+                    <a asp-action="Details" asp-route-id="@animal.Id" class="d-block text-center" data-aos-delay="400" data-aos="fade-right">Detalles</a>
+                      
                 </div>
              
             }
