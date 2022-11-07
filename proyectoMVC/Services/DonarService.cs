@@ -28,8 +28,8 @@ namespace proyectoMVC.Services
             {
 
                 ExcludedPaymentTypes = new List<PreferencePaymentTypeRequest>
-    {
-    new PreferencePaymentTypeRequest
+                {
+      new PreferencePaymentTypeRequest
     {
     Id = "ticket",
     },

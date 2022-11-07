@@ -25,7 +25,7 @@ builder.Services.AddScoped<MascotaService>();
 
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x => {
-    x.LoginPath = "/Users/Login"; x.AccessDeniedPath = new PathString("/Unauthorized");
+    x.LoginPath = "/Users/Login"; x.AccessDeniedPath = "/Home/Home";
     x.ExpireTimeSpan = TimeSpan.FromMinutes(60);
     x.SlidingExpiration = false;
     

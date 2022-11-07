@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
-
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important
+} 
 :root {
     --colorPrimario: #ce88c8de;
 }
@@ -32,12 +35,13 @@ body {
 /* menuu*/
 
 #menu {
-    border-top: 2px solid #fff;
+    
     padding: 10px 0;
-    position: sticky;
+    position: fixed;
     top: -5px;
     z-index: 6;
     background-color: var(--colorPrimario);
+    margin-bottom:20px;
 }
 
     #menu ul {
@@ -169,12 +173,12 @@ body {
 /* fin menu */
 
 
+
 .img-carrousel {
     width: 100%;
     height: 50vh;
     border-radius: 15px;
 }
-
 
 .img-circle {
     width: 350px;
@@ -182,6 +186,7 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
+
 
 .animalitos div i {
     color: var(--colorPrimario);
@@ -202,7 +207,6 @@ body {
         color: var(--colorPrimario);
         transition: .4s;
     }
-
 
 
 
@@ -350,62 +354,49 @@ body {
 .textsareas {
     max-height: 200px;
 }
-
-
-
-
-
-@media screen and (max-width: 890px) {
-    .title-test {
-        font-size: 5rem;
+@media (max-width:650px) {
+    .menuChico {
+        display: initial;
     }
 
-    .inputYlabel {
+    .menuGrande {
+        display: none !important;
+    }
+}
+@media (min-width:650px) {
+    .menuChico {
+        display: none !important;
+    }
+
+    .menuGrande {
+        display: initial;
+    }
+}
+#montoADonar {
+    width: 250px;
+}
+@media(max-width:430px) {
+    .img-circle {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width:400px) {
+    .img-circle {
         width: 280px;
+        height: 280px;
     }
-
-    #menu {
-        padding: 0 0 11px 0;
+}
+@media(max-width:350px) {
+    .img-circle {
+        width: 250px;
+        height: 250px;
     }
-
-    #menu {
-        background-color: var(--colorPrimario);
+}
+@media (max-width:785px) {
+   
+    .imagenDetails{
+        width:100%;
     }
-
-        #menu ul {
-            padding-left: 20px;
-            display: none;
-        }
-
-        #menu #navHamburger:checked ~ .labelNav {
-            position: relative;
-            transform: translate(0, 10px);
-        }
-
-            #menu #navHamburger:checked ~ .labelNav .line2 {
-                display: none;
-            }
-
-            #menu #navHamburger:checked ~ .labelNav .line1 {
-                background-color: #fff;
-                transform: rotate(45deg);
-                position: absolute;
-            }
-
-            #menu #navHamburger:checked ~ .labelNav .line3 {
-                background-color: #fff;
-                transform: rotate(-45deg);
-                position: absolute;
-            }
-
-        #menu #navHamburger:checked ~ ul {
-            width: 100%;
-            display: block;
-        }
-
-        #menu .labelNav {
-            padding: 8px 0 0 0;
-            margin-left: 10px;
-            display: block;
-        }
+   
 }

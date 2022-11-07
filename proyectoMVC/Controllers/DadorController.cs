@@ -25,8 +25,16 @@ namespace proyectoMVC.Controllers
 
         [Authorize(Roles = "usuario")]
         [HttpPost]
-        public async Task<IActionResult> Post(DadorPostDTO dadorInfoPostDTO)
+        public async Task<IActionResult>Post(DadorPostDTO dadorInfoPostDTO)
         {
+            if (!ModelState.IsValid)
+            {
+                string messages = string.Join("; ", ModelState.Values
+                                        .SelectMany(x => x.Errors)
+                                        .Select(x => x.ErrorMessage));
+                ViewBag.Message = messages;
+               
+            }
             if (dadorInfoPostDTO == null)
             {
                 return View(dadorInfoPostDTO);
@@ -35,10 +43,10 @@ namespace proyectoMVC.Controllers
             {
                 return View(dadorInfoPostDTO);
             }
-
+           
             var userId = (User.Identity as ClaimsIdentity).Claims.Where(c => c.Type == ClaimTypes.NameIdentifier).FirstOrDefault();
             await dadorService.Post(dadorInfoPostDTO, webHostEnvironment, int.Parse(userId.Value));
-            return RedirectToAction("Home", "Mascotas");
+            return RedirectToAction("Home", "Home");
         }
     }
 }

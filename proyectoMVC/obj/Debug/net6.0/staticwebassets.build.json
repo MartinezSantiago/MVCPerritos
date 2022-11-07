@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C7JClqDEy7kfI2emmJlINueRkbCPQBOCFkbTls/InK0=",
+  "Hash": "nQZU7cNmCA1g8XDtbcZPoqHi1UTtqAY/Fk0h14q4BB0=",
   "Source": "proyectoMVC",
   "BasePath": "_content/proyectoMVC",
   "Mode": "Default",
@@ -170,6 +170,23 @@
       "OriginalItemSpec": "wwwroot\\images\\141919f7-343b-4fad-9ffe-94ce0111d381_bombonera.jpg"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\175d3132-15c4-461c-8224-1e163ac4446b_gato2.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/175d3132-15c4-461c-8224-1e163ac4446b_gato2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\175d3132-15c4-461c-8224-1e163ac4446b_gato2.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\1aabb85d-057f-4e5f-9791-2c8172ba5e88_fifaWorldCup.jpg",
       "SourceId": "proyectoMVC",
       "SourceType": "Discovered",
@@ -202,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2115ee9e-4e05-418b-93e1-ed6cdcc5fe90_maxresdefault.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\241fecf5-bc67-4474-a4f5-43f879877ad0_gato2.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/241fecf5-bc67-4474-a4f5-43f879877ad0_gato2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\241fecf5-bc67-4474-a4f5-43f879877ad0_gato2.jpeg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\2baf0cc5-8716-4f19-8443-fc66b1960c18_maxresdefault.jpg",
@@ -306,6 +340,40 @@
       "OriginalItemSpec": "wwwroot\\images\\385885d6-589c-4f0f-8eba-f996bfa246a4_fifaWorldCup.jpg"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\3db959e2-67e7-4910-abbd-8fe58ba77dd5_gato3.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/3db959e2-67e7-4910-abbd-8fe58ba77dd5_gato3.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3db959e2-67e7-4910-abbd-8fe58ba77dd5_gato3.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\41ed016a-bafd-4e03-8f2d-7a50ad99f06e_perro1.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/41ed016a-bafd-4e03-8f2d-7a50ad99f06e_perro1.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\41ed016a-bafd-4e03-8f2d-7a50ad99f06e_perro1.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\54a8f4be-38f3-4359-9ab9-64a77df786dc_maxresdefault.jpg",
       "SourceId": "proyectoMVC",
       "SourceType": "Discovered",
@@ -408,6 +476,23 @@
       "OriginalItemSpec": "wwwroot\\images\\76d90872-c0cb-47fe-9bce-192d4ff67e17_descarga.png"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\7d9cf3fd-c8a0-4c0c-871e-e1e97e1cd2aa_olviia.jpg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/7d9cf3fd-c8a0-4c0c-871e-e1e97e1cd2aa_olviia.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7d9cf3fd-c8a0-4c0c-871e-e1e97e1cd2aa_olviia.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\82f4c598-c3b3-4755-ace0-31f3fd96ce27_bombonera.jpg",
       "SourceId": "proyectoMVC",
       "SourceType": "Discovered",
@@ -423,6 +508,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\82f4c598-c3b3-4755-ace0-31f3fd96ce27_bombonera.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\89f5f590-602b-4eac-8936-1085ecde48de_perro4.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/89f5f590-602b-4eac-8936-1085ecde48de_perro4.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\89f5f590-602b-4eac-8936-1085ecde48de_perro4.jpeg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\93f09ef1-6534-45f8-88ee-a8ae74767186_maxresdefault.jpg",
@@ -508,6 +610,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\acfe4020-946a-4a99-b6fb-ce2d1668ee62_maxresdefault.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\b9a32476-b73b-4c0b-be11-e00a547c4df7_perro2.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/b9a32476-b73b-4c0b-be11-e00a547c4df7_perro2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b9a32476-b73b-4c0b-be11-e00a547c4df7_perro2.jpeg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\bdec5a07-aa3d-4b02-a214-40e7f97982c9_1653826510_995351_1653826595_noticia_normal_recorte1.jpg",
@@ -612,6 +731,23 @@
       "OriginalItemSpec": "wwwroot\\images\\d5efc546-94a9-44b2-abdd-5676f8db994a_maxresdefault.jpg"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\ddc39b1f-f73e-4b99-9f8b-513e48de7825_perro3.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/ddc39b1f-f73e-4b99-9f8b-513e48de7825_perro3.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ddc39b1f-f73e-4b99-9f8b-513e48de7825_perro3.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\dec5bf82-6566-40a4-9c99-6815d740ee0c_8.jpeg",
       "SourceId": "proyectoMVC",
       "SourceType": "Discovered",
@@ -627,6 +763,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\dec5bf82-6566-40a4-9c99-6815d740ee0c_8.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\images\\fcd85f07-d7f9-4a64-8ee1-a8ccc6649c5d_perro1.jpeg",
+      "SourceId": "proyectoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\",
+      "BasePath": "_content/proyectoMVC",
+      "RelativePath": "images/fcd85f07-d7f9-4a64-8ee1-a8ccc6649c5d_perro1.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fcd85f07-d7f9-4a64-8ee1-a8ccc6649c5d_perro1.jpeg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\C-MVC-master\\proyectoMVC\\wwwroot\\js\\site.js",

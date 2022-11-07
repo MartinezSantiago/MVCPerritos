@@ -20,32 +20,35 @@
 
 
 <body>
-   
+    <p>@ViewBag.Message</p>
     <main class="container-fluid mt-4">
         <div class="row formulario d-flex flex-column-reverse flex-lg-row">
-                <form asp-action="Post"  enctype="multipart/form-data" class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4 col-xxl-3 mx-auto my-auto">
-                        <h1 class="text-center display-1 mb-5 title title-test">Dador<span class="fs-5 fw-bold">Form</span></h1>
+            <form asp-action="Post" enctype="multipart/form-data" class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4 col-xxl-3 mx-auto my-auto">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <h1 class="text-center display-1 mb-5 title title-test">Dador<span class="fs-5 fw-bold">Form</span></h1>
                         <input type="text" name="localidad" id="localidad" class="d-block mx-auto p-1 my-3 rounded inputs ps-2" asp-for="Localidad" placeholder="Localidad" required>
                         <input type="text" name="direccion" id="direccion" class="d-block mx-auto p-1 my-3 rounded inputs ps-2" asp-for="Direccion" placeholder="Direccion" required>
             
                         <div class="col-11 col-sm-7 col-md-7 col-lg-9 col-xl-10 col-xxl-8 mx-auto inputYlabel">
                             <label for="frente">Frente DNI</label>
-                            <input type="file" name="name" id="frente" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 w-100" asp-for="FrenteDNI" required>
+                    <input type="file" asp-for="FrenteDNI"  class="d-block mx-auto p-1 my-3 rounded inputs ps-2 w-100" required>
                         </div>
                         <div class="col-11 col-sm-7 col-md-7 col-lg-9 col-xl-10 col-xxl-8 mx-auto inputYlabel">
                             <label for="dorso">Dorso DNI</label>
-                            <input type="file" name="name" id="dorso" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 w-100" asp-for="DorsoDNI" required>
+                    <input type="file" asp-for="DorsoDNI"  class="d-block mx-auto p-1 my-3 rounded inputs ps-2 w-100" required>
                         </div>
                         
                         <div class="col-11 col-sm-7 col-md-7 col-lg-9 col-xl-10 col-xxl-8 mx-auto inputYlabel">
                             <label for="frente">Imagen Persona</label>
-                            <input type="file" name="name" id="Imagen" class="d-block mx-auto p-1 my-3 rounded inputs ps-2 w-100" asp-for="ImagenPersona" required>
+                    <input type="file" asp-for="ImagenPersona"  class="d-block mx-auto p-1 my-3 rounded inputs ps-2 w-100" required>
                         </div>
                         <input type="submit" value="Registrarme como dador" class="mx-auto d-block btns mb-2 mt-2">
-                        <div class="col-12">
-                            <span class="d-flex justify-content-center flex-wrap f-cursive"><a  class="d-block text-center mb-5 text-decoration-none ms-2" asp-action="Home" asp-controller="Home">Volver al Home</a></span>
-                        </div>
+                <div class="col-12">
+                    <span class="d-flex justify-content-center flex-wrap f-cursive"><a class="d-block text-center mb-5 text-decoration-none ms-2" asp-action="Home" asp-controller="Home">Volver al Home</a></span>
+                </div>
+    
                 </form>
+         
         </div>
     </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

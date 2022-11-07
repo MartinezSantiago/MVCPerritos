@@ -15,34 +15,49 @@
 <body>
     <main class="container mt-4 mb-5">
         <div class="row">
+         
             <div class="col-12">
+                <br />
                 <h1 class="fs-1 fw-bold text-center mb-4">Hola, soy @Model.Name @Model.LastName</h1>
             </div>
         </div>
+        
         <div class="row p-5 ">
-            <div class="col-6">
-                <img src="~/images/@Model.Imagen" alt="" class="img-animal rounded">
-            </div>
-            <div class="col-5 mt-5 pt-5">
-               
             
-                <div class="datos ">
-                    <div class="dato d-flex my-2">
-                        <div class="col-6 d-flex align-items-baseline gap-4">
+            <div class="col-6 imagenDetails">
+                <img src="~/images/@Model.Imagen" alt="" class="img-animal rounded" >
+            </div>
+            <div class="col-5 mt-6 pt-6" style="margin-top:-15px">
+   
+                <div class="datos " style="margin-bottom:-50px;">
+                    <div class="dato my-4" >
+                  
+                     <div class="col-12 d-flex align-items-baseline gap-4">
+                            <h2>Mi Información</h2>
+                        </div>
+
+                    </div>
+                    <div class="dato my-4">
+
+                        <div class="col-12 d-flex align-items-baseline gap-4">
                             <h3>Edad:</h3>
                             <span class="fs-5">@Model.Edad</span>
                         </div>
-                        <div class="col-6 d-flex align-items-baseline gap-4">
+
+                    </div>
+                    <div class="dato my-4">
+
+
+                        <div class="col-12 d-flex align-items-baseline gap-4">
                             <h3>Tamaño:</h3>
                             <p class="fs-5">@Model.Tamaño</p>
                         </div>
                     </div>
-    
-                    <div class="dato d-flex my-2">
-                       
-                        <div class="col-6 d-flex align-items-baseline gap-4">
+                    <div class="dato my-4">
+
+                     <div class="col-12 d-flex align-items-baseline gap-4">
                             <h3>Peso:</h3>
-                            <span class="fs-5">@Model.Peso KG</span>
+                            <span class="fs-5">@Model.Peso</span> <span class="fs-5">KG</span>
                         </div>
                     </div>
     
@@ -57,57 +72,97 @@
                             <h3>Raza:</h3>
                             <span class="fs-5">@Model.Raza</span>
                         </div>
+
+                    </div>
+                    <div class="dato my-4">
+                        <div class="col-12 d-flex align-items-baseline gap-4">
+                            
+
+                                <h3>Ubicación:</h3> @{
+                                    switch (@Model.Provincia)
+                                    {
+                                        case "1":
+                                                                <span class="fs-5">Buenos Aires</span>
+                                            ; break;
+                                        case "2":
+                                                                <span class ="fs-5">Catamarca</span>
+                                            ; break;
+                                        case "5":
+                                                                <span class="fs-5">Chaco</span>
+                                            ; break;
+                                        case "6":
+                                                                <span class="fs-5">Chubut</span>
+                                            ; break;
+                                        case "50":
+                                                                <span class="fs-5">CABA</span>
+                                            ; break;
+                                        case "3":
+                                                                <span class="fs-5">Córdoba</span>
+                                            ; break;
+                                        case "4":
+                                                                <span class="fs-5"> Corrientes</span>
+                                            ; break;
+                                        case "7":
+                                                                <span class ="fs-5"> Entre Ríos</span>
+                                            ; break;
+                                        case "8":
+                                                                <span class ="fs-5">Formosa</span>
+                                            ; break;
+                                        case "9":
+                                                                <span class="fs-5">Jujuy</span>
+                                            ; break;
+                                        case "10":
+                                                                <span class ="fs-5"> La Pampa</span>
+                                            ; break;
+                                        case "11":
+                                                                <span class="fs-5">La Rioja</span>
+                                            ; break;
+                                        case "12":
+                                                                <span class="fs-5">Mendoza</span>
+                                            ; break;
+                                        case "13":
+                                                                <span class="fs-5">Misiones</span>
+                                            ; break;
+                                        case "14":
+                                                                <span class="fs-5">Neuquen</span>
+                                            ; break;
+                                        case "15":
+                                                                <span class="fs-5">Rio Negro</span>
+                                            ; break;
+                                        case "16":
+                                                                <span class="fs-5">Salta</span>
+                                            ; break;
+                                        case "17":
+                                                                <span class="fs-5">San Luis</span>
+                                            ; break;
+                                        case "19":
+                                                                <span class="fs-5">Santa Cruz</span>
+                                            ; break;
+                                        case "20":
+                                                                <span class="fs-5">Santa Fe</span>
+                                            ; break;
+                                        case "21":
+                                                                <span class="fs-5">Santiago del Estero</span>
+                                            ; break;
+                                        case "22":
+                                                                <span class="fs-5">Tierra del Fuego</span>
+                                            ; break;
+
+                                    }
+                                }
+                           
+
+                        </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
-        
-        <div class="row px-5">
-            <div class="col-12">
-                <h2>Mi información</h2>
-            </div>
-
-            <div class="col-5 d-flex justify-content-between">
-                <div class="info">
-                    <i class="fa fa-check"></i>
-                    
-                    <span>Ubicación: @{
-                            switch(@Model.Provincia){
-                             case "1": <span>Buenos Aires</span>;break;
-case "2": <span>Catamarca</span>;break;
-case "5": <span>Chaco</span>;break;
-case "6": <span>Chubut</span>;break;
-case "50": <span>CABA</span>;break;
-case "3": <span>Córdoba</span>;break;
-case "4": <span>Corrientes</span>;break;
-case "7": <span>Entre Ríos</span>;break;
-case "8": <span>Formosa</span>;break;
-case "9": <span>Jujuy</span>;break;
-case "10": <span>La Pampa</span>;break;
-case "11": <span>La Rioja</span>;break;
-case "12": <span>Mendoza</span>;break;
-case "13": <span>Misiones</span>;break;
-case "14": <span>Neuquen</span>;break;
-case "15": <span>Rio Negro</span>;break;
-case "16": <span>Salta</span>;break;
-case "17": <span>San Luis</span>;break;
-case "19": <span>Santa Cruz</span>;break;
-case "20": <span>Santa Fe</span>;break;
-case "21": <span>Santiago del Estero</span>;break;
-case "22": <span>Tierra del Fuego</span>;break;
-
-                            }
-                        }</span>
-                    
-                </div>
-
-               
-            </div>
-            <hr>
-        </div>
-
+       
+      
         <div class="row px-5 " >
+            <hr />
             <div class="col-12 ">
                 <h2>Descripción</h2>
             </div>

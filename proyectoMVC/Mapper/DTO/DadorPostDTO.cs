@@ -9,14 +9,17 @@ namespace proyectoMVC.Mapper.DTO
         public string Localidad { get; set; }
         [Required]
         public string Direccion { get; set; }
-        [Required]
         [AllowedExtensions(new string[] { ".jpg", ".jpeg", ".png" })]
+        [Required]
+    
         public IFormFile ImagenPersona { get; set; }
-        [Required]
         [AllowedExtensions(new string[] { ".jpg", ".jpeg", ".png" })]
+        [Required]
+        
         public IFormFile FrenteDNI { get; set; }
-        [Required]
         [AllowedExtensions(new string[] { ".jpg", ".jpeg", ".png" })]
+        [Required]
+     
         public IFormFile DorsoDNI { get; set; }
     }
 }
