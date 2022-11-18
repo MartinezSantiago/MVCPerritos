@@ -48,5 +48,24 @@ namespace proyectoMVC.Controllers
             await dadorService.Post(dadorInfoPostDTO, webHostEnvironment, int.Parse(userId.Value));
             return RedirectToAction("Home", "Home");
         }
+
+        [HttpGet]
+        [Authorize(Roles ="admin")]
+        public async Task<IActionResult> Get()
+        {
+            return View(await dadorService.Get());
+        }
+        [Authorize(Roles = "admin")]
+        public async Task<IActionResult> Autorizar(int Id)
+        {
+          await dadorService.Autorizar(Id);
+            return RedirectToAction("Get");
+        }
+        [Authorize(Roles = "admin")]
+        public async Task<IActionResult> Denegar(int Id)
+        {
+            await dadorService.Denegar(Id);
+            return RedirectToAction("Get");
+        }
     }
 }
