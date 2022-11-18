@@ -1,4 +1,5 @@
-﻿using proyectoMVC.Mapper.DTO;
+﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using proyectoMVC.Mapper.DTO;
 using proyectoMVC.Models;
 
 namespace proyectoMVC.Mapper
@@ -131,6 +132,18 @@ namespace proyectoMVC.Mapper
                Raza=mascota.Raza,
                Tamaño=mascota.Tamaño,
                Tipo=mascota.Tipo
+            };
+        }
+        public DadorGetDTO DadorToDadorGetDTO(Dador dador)
+        {
+            return new DadorGetDTO
+            {
+                Direccion=dador.Direccion,
+                DorsoDNI=dador.DorsoDNI,
+                FrenteDNI=dador.FrenteDNI,
+                Id=dador.Id,
+                ImagenPersona=dador.ImagenPersona,
+                Localidad=dador.Localidad
             };
         }
     }
