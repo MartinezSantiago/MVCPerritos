@@ -12,73 +12,71 @@
     <link rel="icon" type="image/x-icon" href="~/media/icons/logo.png">
     <title>Donador</title>
 </head>
-<body>
-    <main class="container mt-4 mb-5">
+<body class="detalles-bg">
+    <main class="container mt-5 mb-5 bg-white-detatalles">
         <div class="row">
          
             <div class="col-12">
                 <br />
-                <h1 class="fs-1 fw-bold text-center mb-4">Hola, soy @Model.Name @Model.LastName</h1>
+                <h1 class="fs-1 fw-bold text-center mb-4 mt-3">Hola, soy @Model.Name @Model.LastName</h1>
             </div>
         </div>
         
-        <div class="row p-5 ">
+        <div class="row p-lg-5 my-auto">
             
-            <div class="col-6 imagenDetails">
+            <div class=" col-12 col-lg-6 mt-4 imagenDetails">
                 <img src="~/images/@Model.Imagen" alt="" class="img-animal rounded" >
             </div>
-            <div class="col-5 mt-6 pt-6" style="margin-top:-15px">
+            <div class="col-12 col-lg-5 mt-2">
    
-                <div class="datos " style="margin-bottom:-50px;">
-                    <div class="dato my-4" >
+                <div class="datos ">
+                    <div class="dato my-lg-0 my-2">
                   
-                     <div class="col-12 d-flex align-items-baseline gap-4">
-                            <h2>Mi Información</h2>
+                     <div class="col-12">
+                            <h2 class="text-center fw-bold">Mi Información</h2>
                         </div>
 
                     </div>
-                    <div class="dato my-4">
+                    <div class="dato my-lg-0">
 
-                        <div class="col-12 d-flex align-items-baseline gap-4">
-                            <h3>Edad:</h3>
-                            <span class="fs-5">@Model.Edad</span>
+                        <div class="col-12 d-flex justify-content-start align-items-baseline gap-1">
+                            <h3 class="pe-2">Edad:</h3>
+                            <span class="fs-5">@Model.Edad</span> <span class="fs-5">Añitos</span>
                         </div>
 
                     </div>
-                    <div class="dato my-4">
-
-
-                        <div class="col-12 d-flex align-items-baseline gap-4">
-                            <h3>Tamaño:</h3>
-                            <p class="fs-5">@Model.Tamaño</p>
+                    <div class="dato my-lg-4">
+                        <div class="col-12 d-flex justify-content-start align-items-baseline gap-1">
+                            <h3 class="pe-2">Tamaño:</h3>
+                            <span class="fs-5">@Model.Tamaño</span>
                         </div>
                     </div>
-                    <div class="dato my-4">
+                    <div class="dato my-lg-4">
 
-                     <div class="col-12 d-flex align-items-baseline gap-4">
-                            <h3>Peso:</h3>
+                        <div class="col-12 d-flex justify-content-start align-items-baseline gap-1">
+                            <h3 class="pe-2">Peso:</h3>
                             <span class="fs-5">@Model.Peso</span> <span class="fs-5">KG</span>
                         </div>
                     </div>
     
-                    <div class="dato my-4">
-                        <div class="col-12 d-flex align-items-baseline gap-4">
-                            <h3>Sexo:</h3>
+                    <div class="dato my-lg-4">
+                        <div class="col-12 d-flex justify-content-start align-items-baseline gap-1">
+                            <h3 class="pe-2">Sexo:</h3>
                             <span class="fs-5">@Model.Sexo</span>
                         </div>
                     </div>
-                        <div class="dato my-4">
-                        <div class="col-12 d-flex align-items-baseline gap-4">
-                            <h3>Raza:</h3>
+                    <div class="dato my-lg-4">
+                        <div class="col-12 d-flex justify-content-start align-items-baseline gap-1">
+                            <h3 class="pe-2">Raza:</h3>
                             <span class="fs-5">@Model.Raza</span>
                         </div>
 
                     </div>
-                    <div class="dato my-4">
-                        <div class="col-12 d-flex align-items-baseline gap-4">
-                            
+                    <div class="dato my-lg-4">
+                        <div class="col-12 d-flex justify-content-start align-items-baseline gap-1">
 
-                                <h3>Ubicación:</h3> @{
+
+                            <h3 class="pe-2">Ubicación:</h3> @{
                                     switch (@Model.Provincia)
                                     {
                                         case "1":
@@ -158,25 +156,18 @@
                 </div>
 
             </div>
+            <div class="col-12 descripcion">
+                <hr />
+                <h2>Descripción</h2>
+                <p>@Model.Descripcion</p>
+
+                <hr />
+                <h2>Contacto</h2>
+                <p>@Model.Contacto</p>
+            </div>
         </div>
        
       
-        <div class="row px-5 " >
-            <hr />
-            <div class="col-12 ">
-                <h2>Descripción</h2>
-            </div>
-            <div class="col-12 fs-5 ">
-              @Model.Descripcion
-            </div>
-               <hr>
-            <div class="col-12">
-                <h2>Cómo contactarme</h2>
-            </div>
-               <div class="col-12 fs-5">
-              @Model.Contacto
-            </div>
-        </div>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

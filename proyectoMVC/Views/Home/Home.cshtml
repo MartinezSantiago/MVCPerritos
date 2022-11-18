@@ -17,24 +17,24 @@
 
     <title>Home</title>
 </head>
-<body>
+<body class="pt-5 mb-5">
 
-    <main class="container-fluid  mb-5 pt-5 pb-5">
+    <main class="container-fluid mb-5 pt-5 pb-5 bg-white-detatalles m-home">
         <h1 class="display-1 fw-bold text-center" data-aos-delay="500" data-aos="fade-right">Pe<span class="color-primario">ts</span></h1>
 
-        <div class="row d-flex flex-column-reverse flex-lg-row justify-content-center">
-            <div id="carouselExampleIndicators" class="carousel slide  col-md-8 col-lg-6 mx-auto mx-lg-0 pt-3" data-aos-delay="700" data-aos="fade-right" data-bs-ride="true">
+        <div class="row d-flex flex-column-reverse flex-lg-row justify-content-center index-low">
+            <div id="carouselExampleIndicators" class="carousel slide  col-md-8 col-lg-6 mx-auto mx-lg-0 pt-3 index-low" data-aos-delay="400" data-aos="fade-right" data-bs-ride="true">
                 <div class="carousel-inner mt-5">
                     <div class="carousel-item active">
-                        <img src="~/media/imgs/img-carrousel-1.jpg" alt="Foto de nuestro primer local de DP"
+                        <img src="~/media/imgs/img-carrousel-1.jpg" alt="."
                              class="d-block img-carrousel">
                     </div>
                     <div class="carousel-item">
-                        <img src="~/media/imgs/img-carrousel-2.jpg" alt="Foto de nuestro segundo local de DP"
+                        <img src="~/media/imgs/img-carrousel-2.jpg" alt="."
                              class="d-block img-carrousel">
                     </div>
                     <div class="carousel-item">
-                        <img src="~/media/imgs/img-carrousel-3.jpg" alt="Foto de nuestro tercer local de DP"
+                        <img src="~/media/imgs/img-carrousel-3.jpg" alt="."
                              class="d-block img-carrousel">
                     </div>
                 </div>
@@ -56,13 +56,13 @@
         </div>
     </main>
 
-    <section class="container mb-5 pt-5 mx-auto">
+    <section class="container mb-5 pt-5 mx-auto bg-white-detatalles">
         <div class="row mb-5 mx-auto">
             <div class="col-12 mx-auto">
                 <h2 class="display-5 fw-bold text-center" data-aos-delay="300" data-aos="fade-left"><span class="color-primario">Animalitos</span> en adopción</h2>
             </div>
         </div>
-        <div class="row d-flex flex-wrap animalitos">
+        <div class="row d-flex flex-wrap animalitos index-low">
             @{
                 var contador = 0;
                 @foreach (var animal in Model)
@@ -73,13 +73,13 @@
                     }
                     <div class="col-10 col-md-5 col-lg-4 col-xl-4 col-xxl-4 mx-auto mb-5">
                         <img src="~/images/@animal.Imagen" alt="" class="img-circle d-block mx-auto" data-aos-delay="300" data-aos="fade-right">
-                        <div class="fecha d-flex justify-content-center me-3 mt-3" data-aos-delay="400" data-aos="fade-right">
-                            <i class="fa fa-calendar fa-lg me-2" aria-hidden="true" data-aos-delay="450" data-aos="fade-right"></i>
-                            <p data-aos-delay="900" data-aos="fade-right"> @animal.Edad</p>
+                        <div class="fecha d-flex justify-content-center me-3 mt-3" data-aos-delay="300" data-aos="fade-right">
+                            <i class="fa fa-calendar fa-lg me-2" aria-hidden="true" data-aos-delay="350" data-aos="fade-right"></i>
+                            <p data-aos-delay="300" data-aos="fade-right"> @animal.Edad</p>
                         </div>
-                        <h3 class="text-center fw-bold" data-aos-delay="400" data-aos="fade-right">@animal.Name</h3>
-                        <p class="text-center w-75 mx-auto" data-aos-delay="400" data-aos="fade-right">@animal.Tamaño</p>
-                        <a asp-action="Details" asp-controller="Mascotas" asp-route-id="@animal.Id" class="d-block text-center" data-aos-delay="400" data-aos="fade-right">Detalles</a>
+                        <h3 class="text-center fw-bold" data-aos-delay="200" data-aos="fade-right">@animal.Name</h3>
+                        <p class="text-center w-75 mx-auto" data-aos-delay="350" data-aos="fade-right">@animal.Tamaño</p>
+                        <a asp-action="Details" asp-controller="Mascotas" asp-route-id="@animal.Id" class="d-block text-center" data-aos-delay="300" data-aos="fade-right">Detalles</a>
                     </div>
                     contador++;
                 }

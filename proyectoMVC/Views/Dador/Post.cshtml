@@ -20,12 +20,19 @@
 
 
 <body>
-    <p>@ViewBag.Message</p>
-    <main class="container-fluid mt-4">
+    <main class="container-fluid mt-5">
         <div class="row formulario d-flex flex-column-reverse flex-lg-row">
-            <form asp-action="Post" enctype="multipart/form-data" class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4 col-xxl-3 mx-auto my-auto">
+            <form asp-action="Post" enctype="multipart/form-data" class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4 col-xxl-4 mx-auto my-auto mt-5 px-0 px-md-5 bg-white-detatalles">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <h1 class="text-center display-1 mb-5 title title-test">Dador<span class="fs-5 fw-bold">Form</span></h1>
+                @{
+                    if (!string.IsNullOrEmpty(@ViewBag.Message))
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.Message
+                        </div>
+                    }
+                }
                         <input type="text" name="localidad" id="localidad" class="d-block mx-auto p-1 my-3 rounded inputs ps-2" asp-for="Localidad" placeholder="Localidad" required>
                         <input type="text" name="direccion" id="direccion" class="d-block mx-auto p-1 my-3 rounded inputs ps-2" asp-for="Direccion" placeholder="Direccion" required>
             

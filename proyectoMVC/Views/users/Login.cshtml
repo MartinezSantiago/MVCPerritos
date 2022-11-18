@@ -20,14 +20,14 @@
    
     <main class="container-fluid">
         <div class="row formulario d-flex flex-column-reverse flex-lg-row">
-            <div class="col-11 col-sm-9 col-md-7 col-lg-7 col-xl-6 col-xxl-6 mx-auto d-none d-sm-block">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-7 col-xl-6 col-xxl-6 mx-auto  d-none d-sm-block">
                 <img src="~/media/imgs/cat-114782.jpg" alt="" class="h-img shadow">
             </div>
-            <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-3 col-xxl-3 mx-auto my-auto">
+            <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-3 col-xxl-3 mx-auto my-auto">
                 <form asp-action="Login">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                  
-                    <h1 class="text-center title mb-5 f-cursive">Login</h1>
+                    <h1 class="text-center title mb-3 mb-lg-0 mt-lg-0 mt-5 pt-5 pt-md-0 f-cursive">Login</h1>
                        @{
                         if (!string.IsNullOrEmpty(ViewBag.Message))
                         {
