@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
-html, body {
-    width: auto !important;
-    overflow-x: hidden !important
-} 
+
 :root {
-    --colorPrimario: #ce88c8de;
+    --colorPrimario: #e7479f;
 }
 
 * {
@@ -13,9 +10,21 @@ html, body {
     box-sizing: border-box;
     font-family: 'Laila', sans-serif;
 }
+.detalles-bg {
+    background-color: #EFEEF1;
+    padding-top: 40px
+}
+.m-home {
+    margin-top: 90px;
+}
+.bg-white-detatalles {
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 5px 10px 30px #D4308920;
+}
 
 body {
-    background: rgba(219, 216, 200, 0.568);
+    background: #EFEEF1;
     color: #50424F;
 }
 
@@ -32,16 +41,15 @@ body {
     background-color: var(--colorPrimario);
     color: #ff4880;
 }
-/* menuu*/
 
+/* menuu*/
 #menu {
-    
     padding: 10px 0;
     position: fixed;
     top: -5px;
     z-index: 6;
     background-color: var(--colorPrimario);
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
     #menu ul {
@@ -172,7 +180,13 @@ body {
 }
 /* fin menu */
 
+.menuChico {
+    z-index: 5;
+}
 
+.index-low {
+    z-index: 4;
+}
 
 .img-carrousel {
     width: 100%;
@@ -261,7 +275,8 @@ body {
 
 .img-animal {
     width: 100%;
-    height: 60vh;
+    min-height: 35vh;
+    max-height: 100vh;
 }
 
 .table-list {
@@ -392,11 +407,4 @@ body {
         width: 250px;
         height: 250px;
     }
-}
-@media (max-width:785px) {
-   
-    .imagenDetails{
-        width:100%;
-    }
-   
 }
